@@ -1,0 +1,378 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link id="theme-style" rel="stylesheet"
+        href="{% static '../static/js/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css' %}">
+    <link id="theme-style" rel="stylesheet"
+        href="{% static '../static/js/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css' %}">
+    <link id="theme-style" rel="stylesheet" href="{% static '../static/css/styles.css' %}">
+    <title>New Template by NEGM</title>
+
+</head>
+
+<body>
+    <header id="home">
+        <nav>
+            <div class="nav-content">
+                <a class="logo" href="#">O</a>
+                <ul>
+                    <li>
+                        <a href="#home">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#serv">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#team">TEAM</a>
+                    </li>
+                    <li>
+                        <a href="#blog">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="#">LOGIN</a>
+                    </li>
+                    <li class="sign">
+                        <a href="#">SIGN UP</a>
+                    </li>
+                </ul>
+                <button class="toggle-btn" id="openBtn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </nav>
+        <div class="mobile-nav" id="mobNav">
+            <button class="navLink close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img src="./assets/img/five.png" alt="photo" class="mob-img">
+            <ul>
+                <li>
+                    <a href="#home" class="navLink">HOME</a>
+                </li>
+                <li>
+                    <a href="#serv" class="navLink">SERVICES</a>
+                </li>
+                <li>
+                    <a href="#about" class="navLink">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#team" class="navLink">TEAM</a>
+                </li>
+                <li>
+                    <a href="#blog" class="navLink">BLOG</a>
+                </li>
+            </ul>
+            <div class="mob-btns">
+                <div class="sign mob-one">
+                    <a href="#" class="navLink">LOGIN</a>
+                </div>
+                <div class="sign">
+                    <a href="#" class="navLink">SIGN UP</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-container">
+
+            <div class="header-left">
+                <h1 class="header-title">
+                    Inject Your Brand and <br> Values into a Physical Space
+                </h1>
+                <p class="header-text">
+                    Place an order now, and our creative wordsmiths are on it like <br> dots on I's with all the
+                    necessary,
+                    Reduces your total loT cost of oprerations.
+                </p>
+                <div class="header-btns">
+                    <a href="#" class="header-btnOne">ORDER CONTENT</a>
+                    <a href="#" class="header-btnTwo">
+                        <i class="fa-solid fa-caret-right"></i>
+                        CREATE AN ACCOUNT</a>
+                </div>
+            </div>
+            <div class="header-right">
+                <img src="{% static '../static/img/istockphoto-1149046313-612x612-removebg-preview.png' %}" alt="frame">
+            </div>
+        </div>
+        <div class="bg"></div>
+    </header>
+    <!-- first section -->
+    <div class="first-section" id="serv">
+        <div class="banner">
+            <img src="{% static '../static/img/New Bitmap Image.png' %}" alt="banner">
+        </div>
+        <div class="first-container">
+            <div class="first-left">
+                <p class="first-sm-text">
+                    HOW WE CAN HELP YOUR BUSINESS
+                </p>
+                <h1 class="first-title">
+                    We Are a Full-Service Marketing and Design Firm
+                </h1>
+                <p class="first-text">
+                    We are no born masters of good taste, but self-education can help improve that, At Zajno, we played
+                    with leaf design and typography relying on explanations of its effective usage in "Form of the book"
+                    by Jan Tschichold.
+                    <br> Share your expertise with us, Were we successful in combining fonts and choosing an appropriate
+                    typsetting method? We welcome your feedback, Not only fitness classes should be fun, but also their
+                    internal management, With busy class schedules and wide variety of instructors, administration is
+                    always a big deal.
+                </p>
+                <a href="#" class="first-btn">ORDER CONTENT</a>
+            </div>
+            <div class="first-right">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{% static '../static/img/cardone.jpg' %}" alt="card img">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            GRAPHIC AND WEB DESIGN
+                        </h3>
+                        <p class="card-text">
+                            As a brand marketing firm, helping your company
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{% static '../static/img/cardtwo.jpg' %}" alt="card img">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            GRAPHIC AND WEB DESIGN
+                        </h3>
+                        <p class="card-text">
+                            As a brand marketing firm, helping your company
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{% static '../static/img/cardthree.jpg' %}" alt="card img">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            GRAPHIC AND WEB DESIGN
+                        </h3>
+                        <p class="card-text">
+                            As a brand marketing firm, helping your company
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="{% static '../static/img/cardfour.jpg' %}" alt="card img">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            GRAPHIC AND WEB DESIGN
+                        </h3>
+                        <p class="card-text">
+                            As a brand marketing firm, helping your company
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- first banner -->
+    <div class="first-banner" id="about">
+
+    </div>
+    <!-- second section -->
+    <div class="second-section" id="team">
+        <div class="second-container">
+            <div class="second-left">
+                <img src="{% static '../static/img/four.png' %}" alt="photo">
+            </div>
+            <div class="second-right">
+                <p class="second-sm-text">
+                    UNLIKE ANY ADVERTISING AGENCY
+                </p>
+                <h1 class="second-title">
+                    We Are a Solution-Based Marketing Company
+                </h1>
+                <p class="second-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et non iste quidem repellendus
+                    voluptatibus, impedit obcaecati consequuntur quia dolor, soluta adipisci culpa. Quia modi error,
+                    autem esse magni illo. Autem corrupti cupiditate non officiis blanditiis nulla unde recusandae
+                    provident eum!
+                </p>
+                <a href="#" class="second-btn">ORDER CONTENT</a>
+            </div>
+        </div>
+        <div class="second-middle-text">
+
+            <div class="owl-carousel owl-theme owl-loaded">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item">
+                            <h1>How Does it Work?</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem voluptatem voluptas
+                                quae,
+                                illo a
+                                laudantium laboriosam! Voluptates, atque enim! Itaque nostrum adipisci magni totam.</p>
+                        </div>
+                        <div class="owl-item">
+                            <h1>How Does it Work?</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem voluptatem voluptas
+                                quae,
+                                illo a
+                                laudantium laboriosam! Voluptates, atque enim! Itaque nostrum adipisci magni totam.</p>
+                        </div>
+                        <div class="owl-item">
+                            <h1>How Does it Work?</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem voluptatem voluptas
+                                quae,
+                                illo a
+                                laudantium laboriosam! Voluptates, atque enim! Itaque nostrum adipisci magni totam.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="owl-nav">
+                    <div class="prev"><i class="fas fa-arrow-circle-left"></i>
+                    </div>
+                    <div class="next"><i class="fas fa-arrow-circle-right"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="second-container">
+            <div class="second-left">
+                <img src="{% static '../static/img/two.png' %}" alt="photo">
+            </div>
+            <div class="second-right">
+                <p class="second-sm-text">
+                    UNLIKE ANY ADVERTISING AGENCY
+                </p>
+                <h1 class="second-title">
+                    We Are a Solution-Based Marketing Company
+                </h1>
+                <p class="second-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et non iste quidem repellendus
+                    voluptatibus, impedit obcaecati consequuntur quia dolor, soluta adipisci culpa. Quia modi error,
+                    autem esse magni illo. Autem corrupti cupiditate non officiis blanditiis nulla unde recusandae
+                    provident eum! <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et non iste quidem repellendus
+                    voluptatibus, impedit obcaecati consequuntur quia dolor, soluta adipisci culpa. Quia modi error,
+                    autem esse magni illo. Autem colanditiis nulla unde recusandae
+                    provident eum!
+                </p>
+                <a href="#" class="second-btn">ORDER CONTENT</a>
+            </div>
+        </div>
+    </div>
+    <!-- contact  -->
+    <div class="contact-section" id="blog">
+
+        <div class="contact">
+            <div class="contact-content">
+                <p class="contact-text">
+                    PLACE AN ORDER NOW.
+                </p>
+                <h1 class="contact-title">
+                    Take your team anywhere to go.
+                </h1>
+            </div>
+            <div class="contact-btns">
+                <a href="#" class="contact-btnone">ODRDER CONTENT</a>
+                <a href="#" class="contact-btntwo">CONTACT US</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <p class="footer-title">
+                    CIRCLECIRCLELTD
+                </p>
+                <p class="footer-text">
+                    On our way to office. we start preparing for the day in our minds.
+                </p>
+                <a href="#" class="footer-link"><i class="fas fa-phone"></i> +17812222222</a>
+                <a href="#" class="footer-link"><i class="fas fa-envlobe"></i> ahmdn4418@gmail.com</a>
+
+            </div>
+            <div class="footer-links">
+                <p class="footer-title">
+                    Products
+                    <br>
+                    Messaging
+                </p>
+
+                <a href="#" class="footer-link">Content Pricing</a>
+                <a href="#" class="footer-link">Integrations</a>
+                <a href="#" class="footer-link">Channels</a>
+                <a href="#" class="footer-link">Documentation</a>
+                <a href="#" class="footer-link">API Reference</a>
+            </div>
+            <div class="footer-links">
+                <p class="footer-title">
+                    FOR USERS
+                </p>
+
+                <a href="#" class="footer-link">Help Center</a>
+                <a href="#" class="footer-link">Learn More</a>
+                <a href="#" class="footer-link">Privacy & Terms</a>
+                <a href="#" class="footer-link">Prototyping</a>
+                <a href="#" class="footer-link">Sketch Business</a>
+
+
+            </div>
+            <div class="footer-links">
+                <p class="footer-title">
+                    INFORMATION
+                </p>
+
+                <a href="#" class="footer-link">Pricing</a>
+                <a href="#" class="footer-link">How It Works</a>
+                <a href="#" class="footer-link">Platform Features </a>
+                <a href="#" class="footer-link">Our Copywriters</a>
+                <a href="#" class="footer-link">Contact Us</a>
+
+            </div>
+
+            <div class="footer-links">
+                <p class="footer-title">
+                    RESOURCES
+                </p>
+                <a href="#" class="footer-link">Help Docs</a>
+                <a href="#" class="footer-link">FAQs/a>
+                    <a href="#" class="footer-link">Content Marking Blog</a>
+                    <a href="#" class="footer-link">Case Studies</a>
+                    <div class="footer-icons">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+            </div>
+        </div>
+        <div class="copy">
+            © 2022 Ahmad Nagm
+
+        </div>
+    </footer>
+    <script src="{% static '../static/js/jquery.js' %}"></script>
+    <script src="{% static '../static/js/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js' %}"></script>
+    <script src="{% static '../static/js/app.js' %}"></script>
+
+
+</body>
+
+</html>
